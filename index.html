@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home" class="logo">Portfolio</a>
+        <span class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('active')">&#9776;</span>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner Section -->
+    <header id="home" class="banner">
+        <div class="banner-content">
+            <h1>Jatin Verma</h1>
+            <h2 id="tagline"></h2>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </header>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            
+            <div class="project-card">
+                <img src="images/project1.jpg" alt="Project 1">
+                <h3>Project Title 1</h3>
+                <p>Short and catchy description of the project, highlighting its purpose and key features.</p>
+                <a href="https://your-project-link.com" target="_blank">View Project</a>
+            </div>
+    
+            <div class="project-card">
+                <img src="images/project2.jpg" alt="Project 2">
+                <h3>Project Title 2</h3>
+                <p>A short description that makes people curious and want to check it out.</p>
+                <a href="https://your-project-link.com" target="_blank">View Project</a>
+            </div>
+    
+            <div class="project-card">
+                <img src="images/project3.jpg" alt="Project 3">
+                <h3>Project Title 3</h3>
+                <p>Brief, impactful description about the problem it solves or features it offers.</p>
+                <a href="https://your-project-link.com" target="_blank">View Project</a>
+            </div>
+    
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Jatin Verma. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
